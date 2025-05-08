@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Recuperar Contraseña</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-content">
+            <h1>Recuperar Contraseña</h1>
+            <button onclick="history.back()">Volver</button>
+            </div>
+        </header>
+
+        <main class="container">
+            <section aria-labelledby="recuperar-heading">
+            <h2 id="recuperar-heading">¿Olvidaste tu contraseña?</h2>
+            <p>Introduce tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+            
+            <form action="procesar_recuperacion.php" method="POST">
+                <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@email.com" required autocomplete="email"/>
+                </div>
+                <button type="submit" class="btn-submit">Enviar enlace</button>
+            </form>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="terminos.html">Términos</a></li>
+                    <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 El Baúl de los Recuerdos. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
