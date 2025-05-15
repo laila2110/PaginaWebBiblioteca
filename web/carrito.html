@@ -9,8 +9,22 @@
 
     <body>
         <header>
-            <h1>Tu Carrito</h1>
-            <button onclick="history.back()" aria-label="Volver a la página anterior">← Volver</button>
+            <div class="logo">
+                <img src="imagenes libros/Imagen logo/logo.png" alt="Logo El Baúl de los Recuerdos">
+                <h1>El Baúl de los Recuerdos</h1>
+            </div>
+
+            <p class="slogan">"Lecturas que encienden tu mente y hacen volar tu imaginación"</p>
+            
+            <div class="titulo">
+                <h2>Tu Carrito</h2>
+                <button onclick="history.back()">Volver</button>
+            </div>
+        
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="login.html">Iniciar Sesión</a>
+            </nav>
         </header>
 
         <main class="container">
@@ -23,20 +37,12 @@
                             <th scope="col">Precio</th>
                             <th scope="col">Cantidad</th>
                             <th scope="col">Total</th>
+                            <th scope="col">Acciones</th> 
                         </tr>
                     </thead>
                     
-                    <tbody>
-                        <tr>
-                            <td>Asesinato en el Orient Express</td>
-                            <td>15,90€</td>
-                            <td>
-                                <label for="cantidad1" class="visually-hidden">Cantidad</label>
-                                <input type="number" id="cantidad1" name="cantidad1" value="1" min="1" max="10" />
-                            </td>
-                            <td>15,90€</td>
-                        </tr>
-                        <!-- Agregar más filas aquí -->
+                    <tbody id="cart-body">
+                        
                     </tbody>
                 </table>
             </section>
@@ -45,6 +51,7 @@
                 <h2 id="total-titulo">Total del Carrito</h2>
                 <p><strong>Total:</strong> 15,90€</p>
                 <button type="button">Proceder a la compra</button>
+                <button type="button" id="vaciar-carrito">Vaciar carrito</button>
             </section>
         </main>
 
@@ -59,5 +66,7 @@
             </nav>
             <p>&copy; 2025 El Baúl de los Recuerdos. Todos los derechos reservados.</p>
         </footer>
+
+        <script src="js/carrito.js"></script>
     </body>
 </html>
