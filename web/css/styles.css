@@ -243,4 +243,17 @@ input[type="number"] {
     overflow: hidden;
 }
 
+.book-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espacio entre precio y botón */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.book-footer button.add-to-cart {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
 

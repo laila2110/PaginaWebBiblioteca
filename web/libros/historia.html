@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>El Baúl de los Recuerdos</title>
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../imagenes libros/Imagen logo/logo.png" alt="Logo El Baúl de los Recuerdos">
+                <h1>El Baúl de los Recuerdos</h1>
+            </div>
+
+            <p class="slogan">"Lecturas que encienden tu mente y hacen volar tu imaginación"</p>
+            
+            <div class="titulo">
+                <h2>Historia</h2>
+                <button onclick="history.back()">Volver</button>
+            </div>
+        
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../login.html">Iniciar Sesión</a>
+                <a href="../carrito.html">Carrito</a>
+            </nav>
+        </header>
+
+        <main class="books-container">
+            <div class="book">
+                <img src="../imagenes libros/sapiens.jpg" alt="Sapiens">
+                <h3>Sapiens</h3>
+                <p>Un fascinante recorrido por la historia de la humanidad, desde los primeros Homo sapiens hasta el mundo moderno globalizado.</p>
+                <p>Una reflexión profunda sobre cómo nuestras ideas, creencias y estructuras sociales han moldeado el mundo actual.</p>
+                <p>
+                    Precio: 18,90€
+                    <button class="add-to-cart" data-title="Sapiens" data-price="18.90">Añadir al carrito</button>
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="../imagenes libros/los pilares de la tierra.jpg" alt="Los pilares de la tierra">
+                <h3>Los pilares de la tierra</h3>
+                <p>Una épica historia medieval ambientada en la construcción de una catedral, donde se entrelazan ambiciones, guerras y pasiones.</p>
+                <p>Un clásico de la narrativa histórica que te atrapa desde la primera página.</p>
+                <p>
+                    Precio: 16,50€
+                    <button class="add-to-cart" data-title="Los pilares de la tierra" data-price="16.50">Añadir al carrito</button>
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="../imagenes libros/yo claudio.jpg" alt="Yo Claudio">
+                <h3>Yo Claudio</h3>
+                <p>Una narración ficticia de las memorias del emperador Claudio, quien relata las intrigas, asesinatos y corrupción en la Roma imperial.</p>
+                <p>Un retrato apasionante de una de las épocas más turbulentas de la historia romana.</p>
+                <p>
+                    Precio: 14,80€
+                    <button class="add-to-cart" data-title="Yo Claudio" data-price="14.80">Añadir al carrito</button>
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="../imagenes libros/la catedral del mar.jpg" alt="La catedral del mar">
+                <h3>La catedral del mar</h3>
+                <p>Ambientada en la Barcelona del siglo XIV, narra la vida de un siervo que lucha por su libertad en medio de grandes cambios sociales.</p>
+                <p>Una historia de lucha, fe y justicia en una ciudad dividida entre poderosos y oprimidos.</p>
+                <p>
+                    Precio: 13,90€
+                    <button class="add-to-cart" data-title="La catedral del mar" data-price="13.90">Añadir al carrito</button>
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="../imagenes libros/el medico.jpg" alt="El médico">
+                <h3>El médico</h3>
+                <p>Desde la Inglaterra medieval hasta la Persia del siglo XI, un joven viaja para convertirse en médico y descubrir los secretos de la medicina.</p>
+                <p>Una travesía emocionante y conmovedora por culturas, saberes y espiritualidad.</p>
+                <p>
+                    Precio: 15,75€
+                    <button class="add-to-cart" data-title="El médico" data-price="15.75">Añadir al carrito</button>
+                </p>
+            </div>
+
+            <div class="book">
+                <img src="../imagenes libros/un mundo feliz.jpg" alt="Un mundo feliz">
+                <h3>Un mundo feliz</h3>
+                <p>Aunque considerada ciencia ficción, esta novela plantea una crítica histórica a las utopías del progreso y la pérdida de la humanidad.</p>
+                <p>Una obra visionaria sobre el control social, la tecnología y el precio de la felicidad.</p>
+                <p>
+                    Precio: 12,90€
+                    <button class="add-to-cart" data-title="Un mundo feliz" data-price="12.90">Añadir al carrito</button>
+                </p>
+            </div>
+        </main>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="terminos.html">Términos</a></li>
+                    <li><a href="politica_privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 El Baúl de los Recuerdos. Todos los derechos reservados.</p>
+        </footer>
+
+        <script src="../js/añadirAlCarrito.js"></script>
+    </body>
+</html>
