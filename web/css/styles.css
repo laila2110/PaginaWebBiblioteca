@@ -242,5 +242,18 @@ input[type="number"] {
     height: 1px;
     overflow: hidden;
 }
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* o una altura fija como 400px */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.pie {
+  margin-top: auto;
+  text-align: center;
+}
 
 
